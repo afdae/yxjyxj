@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>广告</title>
+        <style>
+            body{
+			background-image: url(../img/369.jpg);
+			background-repeat: no-repeat;
+			/* background-size: cover;} */
+           
+
+		#login{
+			width:400px;
+			height:280px;
+			position:absolute;
+			left: 50%;
+			top: 50%;
+			margin-left:-200px;
+			margin-top:-140px;
+			border:1px;
+			
+			align:center;
+			
+			
+		}	
+		#form{
+			width:300px;
+			height:160px;
+			position:relative;
+   			 left:50%;
+  			  top:50%;
+  			  margin-left:-150px;
+  			  margin-top:-80px;
+		
+		}
+		
+	</STYLE>
+
+        </style>
+		<script>
+			function btn1(){
+				if(document.getElementById("f").value=="尹雪佳")
+				{
+					alert("他的微信号为luck_z12138");
+				}
+				else if(document.getElementById("f").value==""){
+					alert("姓名不可为空");
+				}
+				
+				else
+				{
+					alert("抱歉暂时没匹配到");
+				}
+				
+			}
+		</script>
+	</head>
+	<body  >
+        <div id="login">
+            <h2>青春不常在，抓紧谈恋爱</h2>
+            <hr>
+            <h3>此网站是基于大数据来完成匹配功能</h3>
+            <hr>
+		<form >
+		<table>
+			<tr>
+				<td>姓名：</td>
+				<td><input type="text" id="f"></td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td><input type="radio" id="nan" name="sex"> <label for="nan">男</label>  
+                <input type="radio"  id="nv" name="sex"> <label for="nv">女</label></td>
+			</tr>
+			<tr>
+				<td>生日：</td>
+				<td><select>
+                   <option checked="checked">--请选择年--</option>
+                     <option>2001</option>
+                     <option>2002</option>
+                     <option>2003</option>
+                 </select>
+ 					 <select>
+                    <option checked="checked">--请选择月--</option>
+                    <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     <option>10</option>
+                     <option>11</option>
+                     <option>12</option>
+
+                  </select>
+
+                  <select>
+                    <option checked="checked">--请选择日--</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     <option>10</option>
+                     <option>11</option>
+                     <option>12</option>
+                     <option>13</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                     <option>28</option>
+                     <option>29</option>
+                     <option>30</option>
+                     <option>31</option>
+                </select>
+				</td>
+			</tr>
+			<tr>
+				<td>所在区域：</td>
+				<td>
+					<select>
+						<option>--请选择--</option>
+						<option>重庆</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>喜欢的类型</td>
+             <td>
+                
+                <input type="checkbox" name="xingge">可爱的
+                <input type="checkbox" name="xingge">小鲜肉
+                <input type="checkbox" name="xingge">老腊肉
+                <input type="checkbox" name="xingge">都喜欢
+           </td>
+			</tr>
+			<tr>
+             <td>自我介绍</td>
+             <td><textarea>个人简介</textarea></td>
+          </tr>
+		</table>
+		<tr>
+			<td><input type="button" value="提交" id="bt" onclick="btn1()"></td>
+			<td><input type="reset"value="重置"></td>
+		</tr>
+		</form>
+        </div>
+		
+	</body>
+</html>

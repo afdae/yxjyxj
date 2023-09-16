@@ -1,0 +1,8 @@
+#ny {
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+#newyear {
+  width: 100vw;
+  height: 100vh;
+}
